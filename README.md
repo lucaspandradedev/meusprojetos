@@ -1,0 +1,1 @@
+Olá! Aqui estarão todos os projetos feitos durante meu curso de programação, bem como os feitos por iniciativa pŕopria.
