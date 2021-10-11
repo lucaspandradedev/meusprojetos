@@ -1,0 +1,159 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    height: 48px;
+    padding: 10px;
+}
+
+#painel{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 15px;
+    vertical-align: middle;
+    border-radius: 20px;
+}
+
+#painel:hover{
+    background-color: #DCDCDC;
+}
+
+#painel h5{
+    margin: 0px;
+    padding: 0px;
+    font-size: 27px;
+    line-height: 7px;
+    color: #808080;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+nav h5{
+    margin: 0px;
+    margin-left: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 798px;
+}
+
+#bar{
+    width: 597px;
+    height: 47px;
+    border: solid #D3D3D3 1px;
+    border-radius: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#bar:hover{
+    box-shadow: #C0C0C0 0px 0px 5px 0.5px;
+}
+
+input[type="search"]{
+    width: 597px;
+    height: 45px;
+    border-radius: 20px;
+    border-style: none;
+    outline: 0;
+}
+
+input[type="submit"]{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="submit"]:hover{
+    border: solid #D3D3D3 1px;
+    color: black;
+}
+
+.pais{
+    padding: 15px 30px;
+    color: #70757a;
+    background-color: #F8F9Fa;
+    border-bottom: 1px solid #dadce0;
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footernav{
+    padding: 0px 20px;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.footernavoptions1{
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    height: 46px;
+}
+
+.footernavoptions1 a{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #70757a;
+    margin: 0px;
+    margin-right: 10px;
+}
+
+.footernavoptions1 a:hover{
+    text-decoration: underline;
+}
+
+
+.footernavoptions2 a{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #70757a;
+    margin: 0px;
+    margin-left: 10px;
+}
+
+.footernavoptions2 a:hover{
+    text-decoration: underline;
+}
