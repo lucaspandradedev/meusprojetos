@@ -286,7 +286,7 @@ header{
     color: #555;
     border-bottom: 3px solid #EEE;
     cursor: pointer;
-    /*transition: border-color 0.2s ease; <<<<< isso faz uma transição suave de borda*/
+    transition: all 0.2s ease;
 }
 
 .section-projects--filters li:hover,
@@ -296,4 +296,54 @@ header{
 
 .section-projects--filters li:first-child{
     border-left: none;
+}
+
+.section-projects--photos{
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-projects--photo{
+    width: 280px;
+}
+
+.section-projects--photoarea{
+    width: 260px;
+    height: 160px;
+    margin: 10px;
+}
+
+.section-projects--photoarea img{
+    width: inherit;
+    height: inherit;
+}
+
+.section-projects--photoinfo{
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    /*transition: opacity 0.3s ease;*/
+    transition: all 0.3s ease;
+}
+
+.section-projects--photoinfo h5{
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+.section-projects--photoarea:hover .section-projects--photoinfo{
+    /*display: flex;*/
+    opacity: 1;
+    background-color: rgba(0,0,0, 0.5);
 }
