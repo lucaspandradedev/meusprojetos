@@ -397,7 +397,6 @@ header{
 .section-team .slide{
     height: 100%;
     width: 280px;
-    display: inline-block;
     background-color: #FFF;
     margin-right: 20px;
     min-height: 300px;
@@ -477,9 +476,52 @@ header{
     background-color: #B28756;
 }
 
+.section-client{
+    width: 880px;
+    margin: auto;
+    overflow: hidden;
+}
 
-.default.light.client{
-    width: 100vw;
+.section-client .sliders{
+    width: 1000vw;
+    height: 100%;
+    display: flex;
+}
+
+.section-client .slide{
+    height: 100%;
+    width: 880px;
+    margin-right: 20px;
+}
+
+.section-client .slidearea{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    padding: 30px;
+    text-align: center;
+}
+
+.client-name{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 25px;
+}
+
+.client-role{
+    font-size: 15px;
+}
+
+.client-comment{
+    line-height: 30px;
+}
+
+.quotes{
+    margin-top: 28px;
+    margin-bottom: 28px;
 }
 
 .default.light.client .sliders-pointers{
@@ -504,3 +546,157 @@ header{
 .default.light.client .pointer.active{
     background-color: #B28756;
 }
+
+/*SESSÃO DAS EMPRESAS*/
+
+.default.light.sponsor{
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
+    background-color: white;
+}
+
+.section-body-sponsor{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 20px;
+}
+
+/*SESSÃO DOS PREÇOS*/
+
+.default.light.prices{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #CCC;
+}
+
+.section-pricing--table{
+    display: flex;
+    justify-content: space-between;
+    width: 1100px;
+    margin-bottom: 15px;
+
+}
+
+.pricingtable1{
+    background-color:#FFF;
+    text-align: center;
+    padding: 30px;
+    width: 250px;
+}
+
+.pricingtable1 h4{
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.pricingtable1 h2{
+    font-size: 22px;
+}
+
+.pricingtable1 h3{
+    color: #808080;
+}
+
+.pricingtable1 p{
+    font-size: 15px;
+}
+
+.button--price{
+    display: inline-block;
+    color: #FFF;
+    text-transform: uppercase;
+    background-color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+/*SESSÃO PREMIUM*/
+
+.premium-elements{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+}
+
+.books{
+    margin-right: 40px;
+    margin-left: 200px;
+}
+
+.premium-desc{
+    display: flex;
+    flex-direction: column;
+}
+
+.premium-check{
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-top: 15px;
+}
+
+.premium-check img{
+    margin-right: 20px;
+}
+
+.premium-check-info{
+    margin-left: 54px;
+}
+
+.premium-check-info h1, p{
+    color: #808080;
+    line-height: 18px;
+}
+
+.premium-check-info h1{
+    font-size: 15px;
+    font-weight: normal;
+    margin-top: 5px;
+}
+
+/*.default.light.premium::after{
+    content: "";
+	display: block;
+	border-bottom: 1px solid #CCC;
+    padding-top: 40px;
+}*/
+
+
+hr{
+    margin-top: 60px;
+    margin-bottom: 30px;
+    width: 1140px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.default.light.premium .sliders-pointers{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.default.light.premium .pointer{
+    height: 15px;
+    width: 15px;
+    border: 2px solid #B28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.default.light.premium .pointer.active{
+    background-color: #B28756;
+}
+
+
