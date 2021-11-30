@@ -700,3 +700,177 @@ hr{
 }
 
 
+/*SESSÃO DOS NÚMEROS*/
+
+.section-facts{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section--numbers{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section--numbers h1{
+    font-size: 50px;
+    color: #B28756;
+    line-height: 50px;
+}
+
+.section--numbers h1::after{
+    content: '';
+    background-color: #B28756;
+    display: flex;
+    width: 22px;
+    height: 3px;
+    justify-content: center;
+    margin: auto;
+}
+
+.section--numbers h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.section--numbers p{
+    margin-top: 10px;
+}
+
+/*ÁREA DE COMPARTILHAMENTO*/
+
+.default.light.share{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+}
+.share{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.share p{
+    margin-left: 6px;
+}
+
+
+.share-info-area{
+    display: flex;
+    margin-left: 30px;
+}
+
+.share--icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25px;
+}
+
+
+.share--icons a{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: #B28756;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 2px;
+}
+
+.share--icons img{
+    margin: auto;
+}
+
+
+/*SESSÃO DE CONTATO*/
+
+.default.light.contactus .section-body{
+    max-width: 1000px;
+}
+
+input{
+    border-style: none;
+    margin-left: 5px;
+    outline: 0;
+    font-size: 16px;
+    color: #808080;
+    font-style: italic;
+}
+
+
+label{
+    text-transform: uppercase;
+}
+
+label,
+input{
+    margin-bottom: 10px;
+}
+
+.form{
+    max-width: 700px;
+    margin: auto;
+
+}
+
+.name-email{
+    display: flex;
+    justify-content: space-between;
+}
+
+.name,
+.email,
+.subject,
+.message{
+    border-bottom: 2px solid #CCC;
+}
+
+.subject,
+.message{
+    display: flex;
+    margin-top: 40px;
+}
+
+input[id="name"]{
+    width: 280px;
+}
+
+input[id="email"]{
+    width: 280px;
+}
+
+input[id="subject"]{
+    width: 100%;
+}
+
+textarea{
+    width: 100%;
+    height: 100px;
+    background-color: #F7F7F7;
+    border-style: none;
+    resize: none;
+    margin-left: 5px;
+    outline: 0;
+    font-size: 16px;
+    color: #808080;
+    font-style: italic;
+}
+
+.sendmessage{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
