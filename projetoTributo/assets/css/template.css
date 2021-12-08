@@ -97,6 +97,22 @@ td{
 }
 
 
+.scroll--button{
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    background-image: url(../images/jeticon2.jpg);
+    background-size: cover;
+    background-position: center;
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
 .socialmedias a{
     text-decoration: none;
     color: black;

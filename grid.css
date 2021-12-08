@@ -57,7 +57,20 @@ footer{
     }
 }
 
+.mudazul{
+    background-color: cornflowerblue;
+    color: crimson;
+}
 
+#telefone{
+    display: none;
+}
+
+.demo{
+    background-color: red;
+    color: black;
+    font-size: 30px;
+}
 
 
 

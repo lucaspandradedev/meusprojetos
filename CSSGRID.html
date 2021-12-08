@@ -5,15 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./grid.css">
+    <script src="./script.js"></script>
     <title>CSS GRID</title>
 </head>
 <body>
     <div class="container">
-        <header class="item">Cabeçalho</header>
+        <header id="cabeça" class="item">Cabeçalho</header>
         <nav class="item">Menu</nav>
         <section class="item">Conteúdo</section>
         <footer class="item">Rodapé</footer>
         <div class="item ad">Anúncio</div>
     </div>
+
+    <h1>LISTA DE TELEFONES</h1>
+    <div id="telefone">84 9895165464</div>
+    <button onclick="mostrarTelefone()" class="show--button">Mostrar telefone</button>
+
+    <div class="demo">...</div>
+
+    <!--<script>
+        let html = '';
+
+        let c = 0;
+
+        while (c <= 10) {
+            html += "Número: "+c+"</br>";
+            c += 1;
+        }
+        
+        for (let c = 1; c <= 10; c++){
+            html += "Número: "+c+"com FOR"+"</br>";
+        }
+
+        document.querySelector('.demo').innerHTML = html;
+    </script>-->
 </body>
 </html>
