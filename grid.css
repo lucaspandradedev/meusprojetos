@@ -1,5 +1,9 @@
 /*MONTADO A ESTRUTURA DE UM SITE*/
 
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+
+
 .container{
     display: grid;
     gap: 10px;
@@ -74,7 +78,11 @@ footer{
 
 
 
-
+.teste a{
+    color: black;
+    font-size: 50px;
+    background-color: tra;
+}
 
 
 
