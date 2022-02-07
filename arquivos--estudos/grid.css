@@ -1,0 +1,180 @@
+/*MONTADO A ESTRUTURA DE UM SITE*/
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&display=swap');
+
+
+
+.container{
+    display: grid;
+    gap: 10px;
+    background-color: #CCC;
+    grid-template-areas: 
+        "header header header header header"
+        "menu content content content content"
+        "footer footer footer footer ad"
+    
+    ;
+}
+
+.item{
+    background-color: crimson;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFF ;
+    font-size: 20px;
+}
+
+select{
+    width: 300px;
+}
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: menu;
+}
+
+section{
+    grid-area: content;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.ad{
+    grid-area: ad;
+}
+
+
+@media (max-width: 750px){
+    .container{
+        grid-template-areas: 
+            "header header header menu"
+            "content content content content"
+            "ad ad ad ad "
+            "footer footer footer footer"
+        
+        ;
+    }
+}
+
+.mudazul{
+    background-color: cornflowerblue;
+    color: crimson;
+}
+
+#telefone{
+    display: none;
+}
+
+.demo{
+    background-color: red;
+    color: black;
+    font-size: 30px;
+}
+
+
+
+.teste a{
+    color: black;
+    font-size: 50px;
+    background-color: tra;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*.container{
+    background-color: #CCC;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+        "item1 item2"
+        "item3 item4"
+    ;
+}
+
+.item{
+    background-color: blue;
+    border-radius: 10px;
+    padding: 20px;
+    color: #FFF;
+    font-size: 20px;
+}
+
+/*.item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.item2{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    
+}
+
+.item:nth-child(3){
+    background-color: red;
+}
+
+.item1{
+    grid-area: item1;
+}
+
+.item2{
+    grid-area: item2;
+}
+
+.item3{
+    grid-area: item3;
+}
+
+.item4{
+    grid-area: item4;
+}
+*/

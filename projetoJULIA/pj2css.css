@@ -1,0 +1,611 @@
+/******************configurações gerais para todo o site************************/
+
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sunflower:wght@300;500&display=swap');
+
+
+:root{
+    --lightcolor: #eabffa; /*rgb(234, 191, 250)*/
+    --barcolor: #880027; /*rgb(143, 0, 45)*/
+    --maincolor: #821D2B; /*rgb(130, 29, 43)*/
+    --bthp: rgb(239 44 74);
+    --bc: #000; /*--bc: #26282B;*/
+    --winecolor: #7f0030;
+    /*cores para gradiente 136 1 47 e 138 189 252*/ 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /*display: flex;
+    flex-direction: column;*/
+    background-color: var(--bc);
+    overflow-x: hidden;
+}
+
+
+/*SESSÃO DE ANIMAÇÃO*/
+@keyframes surgir--topo{
+    from {margin-top: -100px; opacity: 0;}
+    to {margin-top: 0px; opacity: 1;}
+}
+
+@keyframes surgir{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+/*[data-animate]{
+    transition: all 2s;
+    opacity: 0;
+    margin-left: 150px;
+
+}
+
+[data-animate].show{
+    opacity: 1;
+    margin-left: 0px;
+}*/
+
+/*SESSÃO DO HEADER*/
+
+.header--banner{
+    background: url(./assets/images/fundo-site-oficial.jpg);
+    height: 750px;
+    width: auto;
+    background-position: top;
+    background-size: cover;
+    animation: surgir--topo 2s;
+}
+
+/*****************SESSÃO ESTRUTURAL MAIS GERAL**********************/
+
+.sliders--area{
+    margin-top: 80px;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    /*background-color: red;*/
+}
+
+.sliders{
+    height: 300px;
+    width: 350px;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    /*background-color: blue;*/
+}
+
+.arrow-previous,
+.arrow-next{
+    cursor: pointer;
+}
+
+/*.arrow-previous{
+    margin-left: 300px;
+}
+
+.arrow-next{
+    margin-right: 300px;
+}*/
+
+/*.arrow-previous:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    width: 0; 
+    height: 0; 
+
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-right: 20px solid var(--maincolor);
+}
+
+.arrow-next:before{
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    width: 0; 
+    height: 0; 
+
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent; 
+    border-left: 20px solid var(--maincolor);
+}*/
+
+.container{
+    width: 90vw;
+    margin: auto;
+    /*background: linear-gradient(0deg, rgb(136 1 47),rgb(138 189 252),rgb(136 1 47));*/
+}
+
+.default--area{
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: surgir 2s;
+}
+
+.panel--area{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+
+.panel--mobile--area{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    width: 100%;
+}
+
+.panel--mobile{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.panel--mobile img{
+    width: 100%;
+    height: auto;
+}
+
+img.aula{
+    width: 250px;
+    height: auto;
+    margin: 10px 0px;
+}
+
+.panel--desc,
+.panel--area{
+    color: #FFF;
+    text-align: center;
+    font-family: 'Sunflower', sans-serif;
+}
+
+.panel--area p{
+    margin-top: 20px;
+    margin-bottom: 35px;
+    font-size: 25px;    
+}
+
+
+.panel--desc h1{
+    margin-bottom: 20px;
+    font-size: 40px;
+}
+
+.panel img{
+    width: 100%;
+    height: auto;
+}
+
+.julia{
+    font-size: 50px;
+    font-family: 'Sunflower', sans-serif;
+    font-weight: 700;
+}
+
+.bar{
+    width: 350px;
+    height: 3px;
+    background-color: var(--winecolor);
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.balloons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80px;
+    margin-bottom: 15px;
+}
+
+.balloon{
+    display: inline-block;
+    padding: 10px 40px;
+    font-size: 20px;
+    font-family: 'Sunflower', sans-serif;
+    cursor: pointer;
+    border: 2px solid var(--winecolor);
+    border-radius: 10px;
+    background: var(--winecolor);
+    color: #FFF;
+    font-weight: 600;
+    transition: box-shadow 0.4s ease-in-out,
+                border-color 0.4s ease-in-out, 
+                padding 0.2s ease-in-out,
+                background-color 0.4s ease-in-out,
+                color 0.4s ease-in-out,
+                font-size 0.2s ease-in-out;
+}
+
+.balloon:hover {
+    background-color: var(--bthp);
+    box-shadow: 0 0 5px var(--bthp),
+                0 0 30px rgb(239 44 74 / 0.8),
+                0 0 45px rgb(239 44 74 / 0.7),
+                0 0 50px rgb(239 44 74 / 0.6);
+    border-color: transparent;
+    padding: 18px 60px;
+    font-size: 23px;
+}
+
+.balloon a{
+    text-decoration: none;
+    color: #FFF;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.default--area h1{
+    font-family: 'Poiret One', cursive;
+    margin-bottom: 20px;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.default--area p{
+    margin-top: 18px;
+    margin-bottom: 18px;
+    font-size: 23px;
+    font-weight: 300;
+    font-family: 'Sunflower', sans-serif;
+
+}
+
+footer{
+    margin-top: 50px;
+    border-top: 1px solid #111;
+    height: 100px;
+}
+
+.footer--area{
+    height: inherit;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*SESSÃO DE CONTEÚDO*/
+
+.default--area--left{
+    flex: 1;
+}
+
+.default--area--right{
+    flex: 1;
+}
+
+.default--area--right img{
+    height: 550px;
+}
+
+.default--area--left2{
+    flex: 1;
+}
+
+.default--area--right2{
+    flex: 1;
+    text-align: left;
+}
+
+.default--area--left2 img{
+    height: 550px;
+}
+
+.slider{
+    background: linear-gradient(0deg, rgb(130, 29, 43), rgb(0,0,0));
+    /*background-color: var(--maincolor);*/
+    padding: 10px;
+    display: flex;
+    height: 300px;
+    min-width: 350px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: all 1s ease;
+    color: #CCC;
+    animation: surgir--lateral 2s;
+}
+
+.sldM{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.slider h1{
+    margin-top: 15px;
+    font-family: 'Poiret One', cursive;
+}
+
+.slider p{
+    margin-top: 80px;
+    /*margin-bottom: 50px;*/
+    font-family: 'Sunflower', sans-serif;
+    font-size: 24px;
+}
+
+
+@media (width: 1024px) {
+    .header--banner{
+        height: 626px;
+    }
+}
+
+/*@media (min-width: 375px) and (max-width:376px){
+    
+    .header--banner{
+        height: 200px;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .default--area h1{
+        font-size: 20px;
+    }
+
+    .default--area p{
+        font-size: 15px;
+    }
+
+    .balloon{
+        font-size: 12px;
+    }
+
+    .default--area--left2{
+        flex: 1;
+        order: 2;
+    }
+    
+    .default--area--right2{
+        flex: 1;
+        order: 1;
+    }
+
+    .default--area--right img{
+        height: 350px;
+    }
+
+    .default--area--left2 img{
+        height: 350px;
+    }
+
+    .bar{
+        width: 230px;
+    }
+
+    .slider{
+        min-width: 277px;
+    }
+
+    .arrow-previous:before{
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .arrow-next:before{
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .sldM{
+        margin-left: 123px;
+        margin-right: 123px;
+    }
+
+}*/
+
+@media (min-width: 320px) /*and (max-width: 374px)*/and (max-width: 440px){
+    
+    .header--banner{
+        height: 376px;
+        background-image: url(./assets/images/Capa1x1-100.jpg);
+    }
+
+    .default--area{
+        margin-top: 0px;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .default--area h1{
+        font-size: 20px;
+    }
+
+    .default--area p{
+        font-size: 15px;
+    }
+
+    .balloon{
+        font-size: 12px;
+    }
+
+    .default--area--left2{
+        flex: 1;
+        order: 2;
+    }
+    
+    .default--area--right2{
+        flex: 1;
+        order: 1;
+    }
+
+    .default--area--right img{
+        height: 350px;
+    }
+
+    .default--area--left2 img{
+        height: 350px;
+    }
+
+    .bar{
+        width: 230px;
+    }
+
+    .panel--desc h1{
+        font-size: 29px;
+    }
+
+    .panel--area p{
+        font-size: 13px;
+    }
+
+    .julia{
+        font-size: 40px;
+    }
+
+    .panel--area{
+        display: none;
+    }
+
+    .panel--mobile--area{
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .sliders{
+        width: 275px;
+    }
+
+    .slider{
+        min-width: 275px;
+    }
+
+    .arrow-previous:before{
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .arrow-next:before{
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .sldM{
+       /* margin-left: 172px;
+        margin-right: 172px;*/
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+}
+
+/*@media (min-width:425px) and (max-width:426px){
+    .header--banner{
+        height: 200px;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .default--area h1{
+        font-size: 20px;
+    }
+
+    .default--area p{
+        font-size: 15px;
+    }
+
+    .balloon{
+        font-size: 12px;
+    }
+
+    .default--area--left2{
+        flex: 1;
+        order: 2;
+    }
+    
+    .default--area--right2{
+        flex: 1;
+        order: 1;
+    }
+
+    .default--area--right img{
+        height: 350px;
+    }
+
+    .default--area--left2 img{
+        height: 350px;
+    }
+
+    .bar{
+        width: 230px;
+    }
+
+    .slider{
+        min-width: 322px;
+    }
+
+    .arrow-previous:before{
+        margin: 0;
+        margin-right: 10px;
+    }
+
+    .arrow-next:before{
+        margin: 0;
+        margin-left: 10px;
+    }
+
+    .sldM{
+        margin-left: 78px;
+        margin-right: 78px;
+    }
+}*/
+
+@media (min-width: 441px) and (max-width: 790px) {
+
+    .header--banner{
+        height: 470px;
+    }
+
+    .column{
+        flex-direction: column;
+    }
+
+    .default--area--left2{
+        flex: 1;
+        order: 2;
+    }
+    
+    .default--area--right2{
+        flex: 1;
+        order: 1;
+    }
+
+    .default--area--right img{
+        height: 400px;
+    }
+
+    .default--area--left2 img{
+        height: 400px;
+    }
+
+    .bar{
+        width: 230px;
+    }
+}
+

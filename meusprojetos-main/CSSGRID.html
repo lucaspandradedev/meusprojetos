@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./grid.css">
+    <title>CSS GRID</title>
+</head>
+<body>
+    <div class="container">
+        <header id="cabeça" class="item">Cabeçalho</header>
+        <nav class="item">Menu</nav>
+        <section class="item">Conteúdo</section>
+        <footer class="item">Rodapé</footer>
+        <div class="item ad">Anúncio</div>
+    </div>
+
+    <h1>LISTA DE TELEFONES</h1>
+    <div id="telefone">84 9895165464</div>
+    <button onclick="mostrarTelefone()" class="show--button">Mostrar telefone</button>
+
+    <div class="demo">...</div>
+
+    <div class="teste">
+        <a href="">A</a>
+
+
+        <ul id="novomenu">
+            <li>primeiro item</li>
+        </ul>
+    </div>
+
+    
+    <button onclick="rodar()">Rodar em 2s</button>
+    <button onclick="parar()">Parar</button>
+
+    <!--<script>
+        let html = '';
+
+        let c = 0;
+
+        while (c <= 10) {
+            html += "Número: "+c+"</br>";
+            c += 1;
+        }
+        
+        for (let c = 1; c <= 10; c++){
+            html += "Número: "+c+"com FOR"+"</br>";
+        }
+
+        document.querySelector('.demo').innerHTML = html;
+    </script>-->
+</body>
+
+<script src="./script.js"></script>
+</html>

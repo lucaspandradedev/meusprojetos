@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../projetoCadastro/assets/css/template.css">
+    <title>Ficha de Cadastro</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <form action="" method="POST">
+        
+            <div class="formcontainer">
+                
+                <h1>Cadastro</h1>
+    
+                <div class="inputs">
+    
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required>
+    
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required>
+    
+                    <div class="sexo">
+                        <label for="sexo">Sexo:</label>
+                        <div style="margin-left: 5px; font-family: Arial, Helvetica, sans-serif; color: #405c60;">Masculino</div>
+                        <input type="radio" name="sexo" id="sexo">
+                        <div style="margin-left: 5px; font-family: Arial, Helvetica, sans-serif; color: #405c60;">Feminino</div>
+                        <input type="radio" name="sexo" id="sexo">
+                    </div>
+    
+                    <label for="email">Seu melhor e-mail</label>
+                    <input type="email" name="email" id="email" required>
+    
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" id="senha" required>
+
+                    <input type="submit" >
+                
+                </div>
+
+                <div class="cadastreseagora">
+                    <h3>Ainda não se cadastrou?</h3>
+                    <input type="submit" value="Cadastre-se" id="botaoC">
+                </div>
+    
+            </div>
+    
+    
+        </form>
+
+    </div>
+    
+    
+</body>
+</html>

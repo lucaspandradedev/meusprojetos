@@ -1,0 +1,32 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.window{
+    display: flex
+}
+
+.content{
+    height: 300px;
+    text-align: center;
+}
+
+.area1{
+    background-color: red;
+    flex: 1;
+}
+
+.area2{
+    background-color: royalblue;
+    flex: 2;
+    align-items: center;
+    justify-content: center;
+    display: block;
+}
+
+.area3{
+    background-color: seagreen;
+    flex: 1;
+}
